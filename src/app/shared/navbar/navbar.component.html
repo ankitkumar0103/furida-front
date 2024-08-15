@@ -1,0 +1,130 @@
+<header
+  class="fixed top-0 left-0 w-full px-6 bg-white shadow-md z-50 border-b border-gray-200"
+>
+  <div class="flex justify-between items-center py-4">
+    <a
+      href="#"
+      class="text-2xl font-bold text-red-600 hover:text-red-700 transition duration-300"
+      >FURIDA</a
+    >
+    <button
+      class="md:hidden flex items-center p-2 rounded-lg hover:bg-red-100 hover:text-red-600 transition duration-300"
+      (click)="toggleMenu()"
+    >
+      <i class="fas fa-bars text-gray-800"></i>
+    </button>
+    <div class="hidden md:flex md:items-center md:space-x-6" id="menu">
+      <nav>
+        <ul class="flex items-center space-x-6 text-base text-gray-800">
+          <li>
+            <a
+              class="flex items-center space-x-2 p-3 rounded-lg hover:bg-red-100 hover:text-red-600 transition duration-300"
+              href="#"
+            >
+              <i class="fas fa-info-circle w-5 h-5"></i>
+              <span>About Us</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex items-center space-x-2 p-3 rounded-lg hover:bg-red-100 hover:text-red-600 transition duration-300"
+              href="#"
+            >
+              <i class="fas fa-handshake w-5 h-5"></i>
+              <span>Our Work</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex items-center space-x-2 p-3 rounded-lg hover:bg-red-100 hover:text-red-600 transition duration-300"
+              href="#"
+            >
+              <i class="fas fa-blog w-5 h-5"></i>
+              <span>Blog</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex items-center space-x-2 p-3 rounded-lg hover:bg-red-100 hover:text-red-600 transition duration-300"
+              href="#"
+            >
+              <i class="fas fa-hands-helping w-5 h-5"></i>
+              <span>Get Involved</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex items-center space-x-2 p-3 rounded-lg hover:bg-red-100 hover:text-red-600 transition duration-300"
+              href="#"
+            >
+              <i class="fas fa-envelope w-5 h-5"></i>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Mobile Menu -->
+    <div
+      class="md:hidden fixed top-0 left-0 w-full bg-white shadow-md z-40 border-b border-gray-200 p-4 hidden"
+      [ngClass]="{ hidden: !isMenuOpen }"
+      id="mobile-menu"
+    >
+      <button
+        class="absolute top-4 right-4 p-2 text-gray-800 hover:text-red-600"
+        (click)="toggleMenu()"
+      >
+        <i class="fas fa-times w-6 h-6"></i>
+      </button>
+      <nav>
+        <ul class="space-y-4 text-base text-gray-800">
+          <li>
+            <a
+              class="flex items-center space-x-2 p-3 rounded-lg hover:bg-red-100 hover:text-red-600 transition duration-300"
+              href="#"
+            >
+              <i class="fas fa-info-circle w-5 h-5"></i>
+              <span>About Us</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex items-center space-x-2 p-3 rounded-lg hover:bg-red-100 hover:text-red-600 transition duration-300"
+              href="#"
+            >
+              <i class="fas fa-handshake w-5 h-5"></i>
+              <span>Our Work</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex items-center space-x-2 p-3 rounded-lg hover:bg-red-100 hover:text-red-600 transition duration-300"
+              href="#"
+            >
+              <i class="fas fa-blog w-5 h-5"></i>
+              <span>Blog</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex items-center space-x-2 p-3 rounded-lg hover:bg-red-100 hover:text-red-600 transition duration-300"
+              href="#"
+            >
+              <i class="fas fa-hands-helping w-5 h-5"></i>
+              <span>Get Involved</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="flex items-center space-x-2 p-3 rounded-lg hover:bg-red-100 hover:text-red-600 transition duration-300"
+              href="#"
+            >
+              <i class="fas fa-envelope w-5 h-5"></i>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
